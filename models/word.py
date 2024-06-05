@@ -14,3 +14,4 @@ class Word(models.Model):
             word_data = defs.translate_with_llm(record.name)
             record.definition = word_data["definition"]
             record.translation = word_data["translation"]
+            print(word_data["examples"])
