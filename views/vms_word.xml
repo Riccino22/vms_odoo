@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="vms_word_action" model="ir.actions.act_window">
+            <field name="name">vms words</field>
+            <field name="res_model">vms.word</field>
+            <field name="view_mode">tree,form,kanban</field>
+        </record>
+    </data>
+</odoo>
