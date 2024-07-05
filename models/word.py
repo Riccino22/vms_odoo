@@ -49,7 +49,7 @@ class Word(models.Model):
     def _translate_word(self):
         for record in self:
             if record.name != False:
-                word_data = defs.translate_with_llm(record.name)
+                word_data = defs.translate_with_llm(record.name, record.language)
                 if word_data["translation"] and word_data["definition"] != "False":
                     record.definition = word_data["definition"]
                     record.translation = word_data["translation"]
